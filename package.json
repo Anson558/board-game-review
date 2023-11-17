@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "uuid": "^9.0.1"
+  },
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "name": "game-review",
+  "version": "1.0.0",
+  "description": "practice site for game reviews",
+  "main": "index.js",
+  "author": "Anson Ash",
+  "license": "MIT"
+}

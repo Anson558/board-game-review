@@ -1,0 +1,36 @@
+:root {
+    --text: black;
+    --background: #fffaeb;
+    --primary: #66c1f4;
+    --secondary: #222b44;
+    --accent: #4b5e99;
+}
+
+html {
+    font-family: Merriweather;
+    color: var(--text);
+}
+
+.button {
+    background-color: var(--primary);
+    color: var(--text);
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    display: inline-block;
+    width: fit-content;
+}
+
+.button:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: url('/images/check.png');
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--secondary);
+}
