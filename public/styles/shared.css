@@ -11,7 +11,7 @@ html {
     color: var(--text);
 }
 
-.button {
+.button, button {
     background-color: var(--primary);
     color: var(--text);
     text-decoration: none;
@@ -19,9 +19,10 @@ html {
     border-radius: 50px;
     display: inline-block;
     width: fit-content;
+    border: none;
 }
 
-.button:hover {
+.button:hover, button:hover {
     text-decoration: underline;
 }
 
@@ -33,4 +34,12 @@ h1 {
     font-size: 3.5rem;
     font-weight: 800;
     color: var(--secondary);
+    text-align: center;
+}
+
+.background-div {
+    background-color: var(--secondary);
+    color: white;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
 }

@@ -1,0 +1,14 @@
+#game-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-item {
+    width: 25rem;
+    text-align: center;
+}
+
+.game-item p {
+    text-align: left;
+}

@@ -13,4 +13,8 @@ app.get('/', function (req, res) {
     res.render('index');
 });
 
+app.get('/browse', function(req, res) {
+    res.render('browse')
+})
+
 app.listen(3000);
