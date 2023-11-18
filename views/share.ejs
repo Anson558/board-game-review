@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('includes/head') %>
+        <link rel="stylesheet" href="styles/share.css" />
+        <title>Share</title>
+    </head>
+    <body>
+        <%- include('includes/nav') %>
+        <main>
+            <h1>Share a Game</h1>
+            <section id="form-section">
+                <form action="/share" method="POST" class="background-div" autocomplete="off">
+                    <div>
+                        <label for="title">Title</label>
+                        <input type="text" id="title" name="title">
+                    </div>
+                    <div>
+                        <label for="description">Description</label>
+                        <textarea type="text" id="description" name="description"></textarea>
+                    </div>
+                    <div>
+                        <label for="website">Website</label>
+                        <input type="url" id="website" name="website">
+                    </div>
+                    <button>Submit</button>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

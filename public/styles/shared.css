@@ -15,11 +15,12 @@ html {
     background-color: var(--primary);
     color: var(--text);
     text-decoration: none;
-    padding: 1rem 1.5rem;
+    padding: 1rem 2rem;
     border-radius: 50px;
     display: inline-block;
     width: fit-content;
     border: none;
+    font-size: 1rem;
 }
 
 .button:hover, button:hover {

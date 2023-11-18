@@ -1,0 +1,29 @@
+
+#form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input, label, textarea{
+    display: block;
+    margin: 0.3rem 0;
+    width: 22rem;
+}
+
+input, textarea {
+    color: var(--text);
+    font-size: 1rem;
+}
+
+form {
+    width: fit-content;
+}
+
+form div {
+    margin: 2rem 0;
+}
+
+textarea {
+    height: 7rem;
+}
