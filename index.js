@@ -31,6 +31,15 @@ app.post('/share', function (req, res) {
     const storedGames = JSON.parse(fileData)
     const gameData = req.body;
 
+    storedGames.sort(function(itemA, itemB) {
+        if (itemA.name > itemB.name) {
+            return 1
+        }
+        else {
+            return -1
+        }
+    })
+
     storedGames.push(gameData)
 
     fs.writeFileSync(filePath, JSON.stringify(storedGames))

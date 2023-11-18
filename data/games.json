@@ -1,13 +1,8 @@
 [
     {
-        "title": "Exploding Kittens",
-        "description": "Exploding Kittens is a kitty powered version of Russian Roulette",
-        "buylink": "https://www.explodingkittens.com/products/exploding-kittens-original-edition"
-    },
-    {
-        "title": "Throw Throw Burrito",
-        "description": "The world's first dodgeball card game.",
-        "buylink": "https://www.explodingkittens.com/products/throw-throw-burrito-original-edition"
+        "title": "Happy Salmon",
+        "description": "A 90-second game that you will play for hours.",
+        "buylink": "https://www.explodingkittens.com/products/happy-salmon"
     },
     {
         "title": "Poetry for Neandrathals",
@@ -15,8 +10,13 @@
         "buylink": "https://www.explodingkittens.com/products/poetry-for-neanderthals?refSrc=4620571050123&nosto=productpage-nosto-4"
     },
     {
-        "title": "Happy Salmon",
-        "description": "A 90-second game that you will play for hours.",
-        "buylink": "https://www.explodingkittens.com/products/happy-salmon"
+        "title": "Throw Throw Burrito",
+        "description": "The world's first dodgeball card game.",
+        "buylink": "https://www.explodingkittens.com/products/throw-throw-burrito-original-edition"
+    },
+    {
+        "title": "Exploding Kittens",
+        "description": "Exploding Kittens is a kitty powered version of Russian Roulette",
+        "buylink": "https://www.explodingkittens.com/products/exploding-kittens-original-edition"
     }
 ]
