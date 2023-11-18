@@ -1,14 +1,39 @@
-#game-items {
+main {
     display: flex;
-    justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+#game-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    width: 80%;
 }
 
 .game-item {
-    width: 25rem;
-    text-align: center;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 20rem;
+    height: 14rem;
 }
 
-.game-item p {
-    text-align: left;
+@media (max-width: 79rem) {
+    #game-items {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 53rem) {
+    #game-items {
+        grid-template-columns: 1fr;
+    }
+
+    .game-item {
+        width: 16rem;
+    }
 }

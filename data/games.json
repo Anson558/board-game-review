@@ -1,1 +1,22 @@
-[]
+[
+    {
+        "title": "Exploding Kittens",
+        "description": "Exploding Kittens is a kitty powered version of Russian Roulette",
+        "buylink": "https://www.explodingkittens.com/products/exploding-kittens-original-edition"
+    },
+    {
+        "title": "Throw Throw Burrito",
+        "description": "The world's first dodgeball card game.",
+        "buylink": "https://www.explodingkittens.com/products/throw-throw-burrito-original-edition"
+    },
+    {
+        "title": "Poetry for Neandrathals",
+        "description": "A competitive word-guessing game where u must speak good or get hit with stick.",
+        "buylink": "https://www.explodingkittens.com/products/poetry-for-neanderthals?refSrc=4620571050123&nosto=productpage-nosto-4"
+    },
+    {
+        "title": "Happy Salmon",
+        "description": "A 90-second game that you will play for hours.",
+        "buylink": "https://www.explodingkittens.com/products/happy-salmon"
+    }
+]

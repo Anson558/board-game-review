@@ -8,7 +8,7 @@
 input, label, textarea{
     display: block;
     margin: 0.3rem 0;
-    width: 22rem;
+    width: 18rem;
 }
 
 input, textarea {
@@ -25,5 +25,5 @@ form div {
 }
 
 textarea {
-    height: 7rem;
+    height: 6rem;
 }

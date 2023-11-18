@@ -9,8 +9,12 @@
         <%- include('includes/nav') %>
         <main>
             <h1>Browse Games</h1>
-            <div id="game-items">
-                <%- include('includes/game-item') %>
+            <div>
+                <div id="game-items">
+                    <% for (const game of games) { %>
+                        <%- include('includes/game-item', {game:game}) %>
+                    <% } %>
+                </div>
             </div>
         </main>
     </body>

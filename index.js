@@ -14,7 +14,11 @@ app.get('/', function (req, res) {
 });
 
 app.get('/browse', function (req, res) {
-    res.render('browse');
+    const filePath = path.join(__dirname, 'data', 'games.json')
+    const fileData = fs.readFileSync(filePath)
+    const storedGames = JSON.parse(fileData)
+
+    res.render('browse', {games: storedGames});
 });
 
 app.get('/share', function (req, res) {
@@ -24,12 +28,12 @@ app.get('/share', function (req, res) {
 app.post('/share', function (req, res) {
     const filePath = path.join(__dirname, 'data', 'games.json')
     const fileData = fs.readFileSync(filePath)
-    const storedGame = JSON.parse(fileData)
+    const storedGames = JSON.parse(fileData)
     const gameData = req.body;
 
-    storedGame.push(gameData)
+    storedGames.push(gameData)
 
-    fs.writeFileSync(filePath, JSON.stringify(storedGame))
+    fs.writeFileSync(filePath, JSON.stringify(storedGames))
 
     res.redirect('/confirm')
 })
