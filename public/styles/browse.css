@@ -1,39 +1,6 @@
-main {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
 #game-items {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
-    width: 80%;
-}
-
-.game-item {
-    justify-self: center;
-    align-self: center;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    width: 20rem;
-    height: 14rem;
-}
-
-@media (max-width: 79rem) {
-    #game-items {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (max-width: 53rem) {
-    #game-items {
-        grid-template-columns: 1fr;
-    }
-
-    .game-item {
-        width: 16rem;
-    }
+    flex-direction: column;
+    gap: 2rem;
 }

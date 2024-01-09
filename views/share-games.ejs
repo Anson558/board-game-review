@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('includes/head') %>
+        <link rel="stylesheet" href="styles/share.css" />
+        <title>Share</title>
+    </head>
+    <body>
+        <%- include('includes/nav') %>
+        <main>
+            <h1>Share a Game</h1>
+            <section id="form-section">
+                <form action="/share-games" method="POST" class="background-div" autocomplete="off">
+                    <div>
+                        <label for="title">Title</label>
+                        <input type="text" id="title" name="title">
+                    </div>
+                    <div>
+                        <label for="description">Description</label>
+                        <textarea type="text" id="description" name="description"></textarea>
+                    </div>
+                    <div id="grid-div">
+                        <div>
+                            <label for="price">Price</label>
+                            <input type="number" id="price" name="price" step=".01">
+                        </div>
+                        <div>
+                            <label for="age">Minimum Age</label>
+                            <input type="number" id="age" name="age">
+                        </div>
+                        <div>
+                            <label for="time">Game Length</label>
+                            <input type="number" id="time" name="time">
+                        </div>
+                        <div>
+                            <label for="minplayers">Minimum Players</label>
+                            <input type="number" id="minplayers" name="minplayers">
+                        </div>
+                        <div>
+                            <label for="maxplayers">Maximum Players</label>
+                            <input type="number" id="maxplayers" name="maxplayers">
+                        </div>
+                    </div>
+
+                    <button>Submit</button>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

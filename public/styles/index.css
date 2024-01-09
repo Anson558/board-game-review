@@ -20,10 +20,3 @@
 #hero img {
     height: 40rem;
 }
-
-@media (max-width: 82rem) {
-
-    #hero img {
-        display: none;
-    }
-}

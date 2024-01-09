@@ -1,0 +1,26 @@
+.game-item {
+    width: 30rem;
+}
+
+#detail-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.detail-item {
+    font-size: 0.7rem;
+    font-weight: 700;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.2rem 0.3rem;
+    border-radius: 50px;
+    width: 4rem;
+    height: 2rem;
+}
+
+.detail-item img {
+    width: 1.5rem;
+    height: 1.5rem;
+}

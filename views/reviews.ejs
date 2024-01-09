@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('includes/head') %>
+        <link rel="stylesheet" href="/styles/browse.css">
+        <link rel="stylesheet" href="/styles/review-item.css">
+        <title>Browse</title>
+    </head>
+    <body>
+        <%- include('includes/nav') %>
+        <main>
+            <h1>Browse Reviews</h1>
+            <div>
+                <div id="game-items">
+                    <% if (reviews.length == 0) { %>
+                        <p>There are no reviews for this game. Maybe make one?</p>
+                    <% } else { %>
+                        <% for (const review of reviews) { %>
+                            <%- include('includes/review-item', {review: review, game: game}) %>
+                        <% } %>
+                    <% } %>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

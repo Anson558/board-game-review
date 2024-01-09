@@ -39,8 +39,7 @@ h1 {
 }
 
 .background-div {
-    background-color: var(--secondary);
-    color: white;
+    background-color: rgb(215, 215, 215);
     padding: 1.5rem 2rem;
     border-radius: 8px;
 }

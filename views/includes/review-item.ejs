@@ -1,0 +1,8 @@
+<div class="background-div review-item">
+    <h2><%= game.name %></h2>
+    <% for (let i = 0; i < review.rating; i++ ) { %>
+        <img src="/images/star.webp" alt="star">
+    <% } %>
+    <p><%= review.content %></p>
+    <h3><%= review.author %></h3>
+</div>

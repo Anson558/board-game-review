@@ -8,7 +8,18 @@
 input, label, textarea{
     display: block;
     margin: 0.3rem 0;
-    width: 18rem;
+    width: 30rem;
+}
+
+#grid-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 0;
+}
+
+#grid-div input, #grid-div label {
+    width: 9rem;
 }
 
 input, textarea {
@@ -25,5 +36,5 @@ form div {
 }
 
 textarea {
-    height: 6rem;
+    height: 10rem;
 }

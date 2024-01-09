@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('includes/head') %>
+        <link rel="stylesheet" href="styles/share.css" />
+        <title>Share</title>
+    </head>
+    <body>
+        <%- include('includes/nav') %>
+        <main>
+            <h1>Write a Review</h1>
+            <section id="form-section">
+                <form action="/share-reviews" method="POST" class="background-div" autocomplete="off">
+                    <div>
+                        <label for="game">Game</label>
+                        <select name="game" id="game"> 
+                            <% for (const game of games) { %>
+                                <option value="<%=game._id%>"><%=game.name%></option>
+                            <% } %>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="rating">Rating (Out of 5)</label>
+                        <input type="number" id="rating" name="rating" max="5" min="1">
+                    </div>
+                    <div>
+                        <label for="content">Content</label>
+                        <textarea type="text" id="content" name="content"></textarea>
+                    </div>
+                    <div>
+                        <label for="author">Author Full Name</label>
+                        <input type="text" id="author" name="author">
+                    </div>
+                    <button>Submit</button>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

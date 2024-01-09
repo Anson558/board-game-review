@@ -1,7 +1,21 @@
 <div class="background-div game-item">
     <div>
-        <h2><%= game.title %></h2>
+        <h2><%= game.name %></h2>
         <p><%= game.description %></p>
+        <h3>$<%= game.price %> USD</h3>
     </div>
-    <a class="button" href="<%= game.buylink %>" target="_blank">Buy Game</a>
+    <div id="detail-container">
+        <div class="detail-item">
+            <p>AGE <%= game.details.age %>+</p>
+        </div>
+        <div class="detail-item">
+            <img src="/images/person.webp" alt="person">
+            <p><%= game.details.players.min %> - <%= game.details.players.max %></p>
+        </div>
+        <div class="detail-item">
+            <img src="/images/clock.jpg" alt="">
+            <p><%= game.details.time %></p>
+        </div>
+        <a href="/reviews/<%= game._id %>" class="button">Reviews</a>
+    </div>
 </div>
